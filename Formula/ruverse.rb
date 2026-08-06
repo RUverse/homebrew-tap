@@ -5,21 +5,21 @@
 class Ruverse < Formula
   desc "Control connected personal agents on RUverse"
   homepage "https://ruverse.ai"
-  version "1.0.1"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.0.1/ruverse_1.0.1_darwin_amd64.tar.gz"
-      sha256 "a371c61f68c2b131d22aabf62678d42fef36347ce2fb48e3a8e12c62532cf10d"
+      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.1.0/ruverse_1.1.0_darwin_amd64.tar.gz"
+      sha256 "efa0baf709577fa821aabbc423cfb56674db4280a4758ea7ec4a101d24cea875"
 
       define_method(:install) do
         bin.install "ruverse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.0.1/ruverse_1.0.1_darwin_arm64.tar.gz"
-      sha256 "20cfa70fe9a10f2b5e12b965428b610837001184f6831097260535afeca7c025"
+      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.1.0/ruverse_1.1.0_darwin_arm64.tar.gz"
+      sha256 "78aa8bf8bad6c4e3b6a6f58c8a0cfe5f885879b0ac2f27f66ea81413756a4a8a"
 
       define_method(:install) do
         bin.install "ruverse"
@@ -29,15 +29,15 @@ class Ruverse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.0.1/ruverse_1.0.1_linux_amd64.tar.gz"
-      sha256 "0aa8a6a061ff59a403c108bd9a8019b8a50d95432198b44fba373058eead2c76"
+      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.1.0/ruverse_1.1.0_linux_amd64.tar.gz"
+      sha256 "aac661835db0c8d26ef3e465672d0069818a701a04c2014a48ef8404eeeee02d"
       define_method(:install) do
         bin.install "ruverse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.0.1/ruverse_1.0.1_linux_arm64.tar.gz"
-      sha256 "e5c61a7c22a5ae7c8b1eea0ae0316c60bf5c094e4386268f10f4273547401ada"
+      url "https://github.com/RUverse/ruverse-cli/releases/download/v1.1.0/ruverse_1.1.0_linux_arm64.tar.gz"
+      sha256 "282bfd1e8b66a4328247e93f2b8b7ff80de5ed0d67dd33044992a201ce601de8"
       define_method(:install) do
         bin.install "ruverse"
       end
